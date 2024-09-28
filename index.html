@@ -10,7 +10,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/img.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,49 +19,36 @@
     <header class="mb-4">
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="img/duck.png" class="duck" alt="Home"/></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Catalogo Libri</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Anagrafica Utenti</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Storico Prestiti</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Help</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-secondary" type="submit">
-                    Search
-                  </button>
-                </form>
-              </div>
+                <img src="img/duck.png" class="duck" alt="Home" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AnagraficaUtenti.html">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="StoricoPrestiti.html">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Help.html">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-secondary" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main class="container d-flex">
         <div class="w-75">
@@ -72,7 +59,7 @@
                             <h1 class="fs-2 mb-0">Catalogo Libri</h1>
                         </div>
                         <div class="col text-end">
-                            <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                            <a href="NewBook.html" class="btn btn-primary">Aggiungi Libro</a>
                         </div>
                     </div>
                 </div>
@@ -246,7 +233,7 @@
                 </table>
             </div>
         </div>
-        <div class="col d-none d-md-table-cell">
+        <div class="d-none d-md-table-cell">
             <div class="card mb-5">
                 <h5 class="card-header">Todo</h5>
                 <div class="card-body">
