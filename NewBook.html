@@ -56,20 +56,20 @@
             <div class="row mb-3 container ">
                 <div class="col-6 mb-3">
                     <label for="field-name" class="form-label">Nome Autore</label>
-                    <input type="text" class="form-control" id="field-name" aria-describedby="nome-autore"
+                    <input type="text" class="form-control" id="field-name" aria-describedby="field-name"
                         placeholder="Inserisci il nome dell'autore"
                         required>
                 </div>
                 <div class="col-6 mb-3">
                     <label for="field-surname" class="form-label">Cognome Autore</label>
-                    <input type="text" class="form-control" id="field-surname" aria-describedby="cognome-autore"
+                    <input type="text" class="form-control" id="field-surname" aria-describedby="field-surname"
                         placeholder="Inserisci il cognome dell'autore"
                         required>
                 </div>
         
                 <div class="col-12">
-                    <label for="title" class="form-label">Titolo</label>
-                    <input type="text" class="form-control" id="title" aria-describedby="book-title"
+                    <label for="book-title" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="book-title" aria-describedby="book-title"
                         placeholder="Inserisci il titolo del libro"
                         required>
                     <p class="fs-6">Titolo versione italiana</p>
@@ -77,18 +77,15 @@
             
                 <div class="col-12 col-lg-4 mb-3">
                     <label for="gender" class="form-label">Genere</label>
-                    <select type="text" class="form-control" id="gender" aria-describedby="gender"
-                        placeholder="Scegli il genere"
-                        required>
-                        <option value="1">Uomo</option>
-                        <option value="2">Donna</option>>
+                    <select class="form-control" id="gender" aria-describedby="gender" required>
+                        <option value="">Seleziona il genere</option>
+                        <option value="2">Uomo</option>
+                        <option value="3">Donna</option>
                     </select>
                 </div>
                 <div class="col-12 col-lg-4 mb-3">
-                    <label for="year" class="form-label">Anno di Pubblicazione</label>
-                    <input type="date" class="form-control" id="year" aria-describedby="book-title"
-                        placeholder="Inserisci l'anno"
-                        required>
+                    <label for="release-date" class="form-label">Anno di Pubblicazione</label>
+                    <input type="date" class="form-control" id="release-date" aria-describedby="release-date" required>
                 </div>
                 <div class="col-12 col-lg-4 mb-3">
                     <label for="isbn#" class="form-label">ISBN#</label>
@@ -97,13 +94,12 @@
                         required>
 
                 </div>
-            </div>
-
-                <hr>
-            </div>
+    
+                <hr class="mt-1">
+            
                 <div class="col mb-3">
                     <label for="Note" class="form-label">Note</label>
-                    <textarea type="text" class="form-control mb-1" id="isbn#" aria-describedby="isbn#"
+                    <textarea class="form-control mb-1" id="Note" aria-describedby="Note"
                     placeholder="Inserisci eventuali note sul libro"></textarea>
                 </div>
             </div>
@@ -112,7 +108,7 @@
                 <label class="form-check-label mb-1" for="flexCheckDefault">
                   Disponibile anche in versione digitale
                 </label>
-              </div>
+            </div>
             <button type="submit" class="btn btn-primary mb4">Aggiungi libro</button>
         
         </form>
